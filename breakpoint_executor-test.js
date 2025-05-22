@@ -2,7 +2,6 @@ import http from 'k6/http';
 import { check, sleep } from 'k6';
 
 export const options = {
-    /*
     scenarios: {
         breakpoint: {
             executor: 'ramping-arrival-rate', // Incrementa la carga exponencial
@@ -13,10 +12,6 @@ export const options = {
             ]
         }
     },
-    */
-    stages: [
-        { duration: '10m', target: 100000 }
-    ],
     thresholds: {
         http_req_failed: [{
         threshold: 'rate<=0.01',
