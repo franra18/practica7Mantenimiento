@@ -1,9 +1,11 @@
+// Grupo formado por Francisco Ramírez Cañadas y Jorge Repullo Serrano.
+
 import http from 'k6/http';
 import { sleep } from 'k6';
-// EJECUTAR CON LA GRAFICA Y PEGAR RESULTADO EN EL INFORME
+
 export const options = {
     stages: [
-        { duration: '3m', target: 2400 }, // IMPORTANTE: AQUI VA EL 80% del punto de rotura 
+        { duration: '3m', target: 2400 }, // 80% de VUs del punto de rotura sin executors
         { duration: '3m', target: 2400 },
         { duration: '2m', target: 0 },
     ],

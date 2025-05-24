@@ -1,3 +1,5 @@
+// Grupo formado por Francisco Ramírez Cañadas y Jorge Repullo Serrano.
+
 import http from 'k6/http';
 import { sleep } from 'k6';
 
